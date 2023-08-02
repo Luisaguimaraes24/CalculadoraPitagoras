@@ -1,12 +1,11 @@
 body {
     font-family: Bradley Hand, cursive;
     background: linear-gradient(180deg,#2a1ead,#071952, #120c56, #000000);
-    background-size: 300% 300%;
+    background-size: 300% 400%;
     margin: 0;
+    margin-top: -100px;
     padding: 0;
-    min-height: 100vh;
-    position: relative; /* Adicionado para posicionar as estrelas corretamente */
-    overflow: hidden; 
+    min-height: 20  0px;
     animation: colors 15s ease infinite;
 }
 @keyframes colors {
@@ -21,11 +20,16 @@ body {
     }
     
 }
+.logo {
+    margin-top: 0px;
+    width: 150px;
+    height: 100px;
+  }
 .nome {
     max-width: 950px;
     margin: 0px auto;
-    margin-top: 10x;
-    padding: 130px;
+    margin-top: 10xp;
+    padding: 150px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
