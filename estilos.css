@@ -1,0 +1,112 @@
+body {
+    font-family: Bradley Hand, cursive;
+    background: linear-gradient(180deg,#2a1ead,#071952, #120c56, #000000);
+    background-size: 300% 300%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative; /* Adicionado para posicionar as estrelas corretamente */
+    overflow: hidden; 
+    animation: colors 15s ease infinite;
+}
+@keyframes colors {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+    
+}
+.nome {
+    max-width: 950px;
+    margin: 0px auto;
+    margin-top: 10x;
+    padding: 130px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 20px;
+}
+
+.form {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 0;
+    border: 1px solid #071952; 
+    border-radius: 4px;
+}
+
+/* Estilos para os botões */
+/* Estilos para o primeiro botão (índice 0) */
+button:first-child {
+    margin-bottom: 20px;
+}
+
+/* Estilos para o botão .btn-15 */
+.btn-15 {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px;
+    background-color: #120c56;
+    border: none;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-15:after {
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #120c56;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+                7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+                4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.btn-15:hover {
+    color: #fff;
+}
+
+.btn-15:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.btn-15:active {
+    top: 2px;
+}
+
+/* Estilos para o botão "Histórico" */
+#historicoBtn {
+    background-color: #2a1ead;
+}
+
+/* Estilos para o botão "Calcular Hipotenusa" */
+#calcularBtn {
+    background-color: #2a1ead;
+}
