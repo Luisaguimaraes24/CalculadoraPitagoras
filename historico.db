@@ -1,0 +1,7 @@
+CREATE TABLE consulta (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    catetoOposto float NOT NULL,
+    catetoAdjacente float  NOT NULL,
+    hipotenusa float  NOT NULL,
+    timestamp TEXT NOT NULL
+  )
