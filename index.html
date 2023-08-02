@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Cabeçalho do documento, contém metadados e importações de recursos. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Calculadora de Pitágoras</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="nome">
+        <h1>Calculadora de Pitágoras</h1>
+        <div class="form">
+            <label for="catetoOposto">Cateto Oposto  (A):</label>
+            <input type="number" id="catetoOposto" placeholder="Insira o valor do cateto oposto">
+            <label for="catetoAdjacente">Cateto Adjacente  (B):</label>
+            <input type="number" id="catetoAdjacente" placeholder="Insira o valor do cateto adjacente">
+            <button class="btn btn-15" id="calcularBtn">Calcular Hipotenusa</button>
+            <button class="btn btn-15" id="historicoBtn">Histórico</button>
+        </div>
+        <div class="resultado">
+            <h2>Resultado:</h2>
+            <p id="hipotenusaResultado">A hipotenusa é: <span id="hipotenusaValor"></span></p>
+        </div>
+        <div class="historico">
+            <h2>Histórico de Consultas:</h2>
+            <table><!-- Tabela para exibir o histórico de consultas. -->
+                <thead><!-- Cabeçalho da tabela. -->
+                    <tr>
+                        <th>1-Cateto Oposto     </th><!-- Cabeçalho da coluna para o cateto oposto. -->
+                        <th>2-Cateto Adjacente   </th> <!-- Cabeçalho da coluna para o cateto adjacente. -->
+                        <th>3-Hipotenusa   </th><!-- Cabeçalho da coluna para a hipotenusa. -->
+                        <th>4-Data e Hora   </th>  <!-- Cabeçalho da coluna para a data e hora da consulta. -->
+                    </tr>
+                </thead>
+                <tbody id="historicoBody"></tbody> <!-- Corpo da tabela, onde serão exibidas as linhas com os registros do histórico de consultas. -->
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
